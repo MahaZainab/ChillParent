@@ -88,7 +88,7 @@ def build_interface():
     with gr.Blocks() as demo:
         gr.Markdown(
             """
-            <h1 style="text-align: center; color: #4CAF50;">Voice-to-Voice Chatbot</h1>
+            <h1 style="text-align: center; color: #4CAF50;">Chill Parents Chatbot</h1>
             <h3 style="text-align: center;">Powered by OpenAI Whisper, Llama 8B, FAISS, and gTTS</h3>
             <p style="text-align: center;">Talk to the AI-powered chatbot and get responses in real-time. Start by recording your voice.</p>
             """
