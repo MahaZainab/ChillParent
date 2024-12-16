@@ -1,0 +1,6 @@
+gradio
+whisper
+gtts
+sentence-transformers
+faiss-cpu
+pandas
