@@ -19,11 +19,9 @@ model = whisper.load_model("base")
 client = Groq(api_key="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")
 
 # Load the dataset
-# Replace with the correct path of your dataset stored in Google Drive
-#df = pd.read_json("/content/drive/My Drive/mental_health_counseling_conversations.json", lines=True)
 df = pd.read_json("hf://datasets/Amod/mental_health_counseling_conversations/combined_dataset.json", lines=True)
 
-# Assuming the correct column name for messages is 'message' (check if different)
+
 corpus = df['Context'].dropna().tolist()
 
 # Initialize SentenceTransformer to generate embeddings
@@ -88,7 +86,7 @@ def build_interface():
         gr.Markdown(
             """
             <h1 style="text-align: center; color: #4CAF50;">Chill Parents Chatbot</h1>
-            <h3 style="text-align: center;">Powered by OpenAI Whisper, Llama 8B, FAISS, and gTTS</h3>
+            <h3 style="text-align: center;">Chatbot to help parents and other family members to reduce stress between them</h3>
             <p style="text-align: center;">Talk to the AI-powered chatbot and get responses in real-time. Start by recording your voice.</p>
             """
         )
