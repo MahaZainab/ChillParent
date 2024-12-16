@@ -1,5 +1,5 @@
 gradio
-whisper
+openai-whisper
 gtts
 sentence-transformers
 faiss-cpu
