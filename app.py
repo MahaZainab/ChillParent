@@ -9,9 +9,8 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import faiss
-from google.colab import drive
 
-# Mount Google Drive to save/load files persistently
+index_file_path="faiss_index.index"
 
 # Load Whisper model for transcription
 model = whisper.load_model("base")
