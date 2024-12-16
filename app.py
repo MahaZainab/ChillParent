@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer
 import faiss
 
 index_file_path="faiss_index.index"
-
+embeddings_file_path="embeddings.npy"
 # Load Whisper model for transcription
 model = whisper.load_model("base")
 
